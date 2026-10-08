@@ -6,3 +6,7 @@ Rozhodl jsem se že zkusím flashovat BetaFlight ale stažená webová aplikace 
 
 8.10.-14.10
 Založení GitHubu pro lepší přehled.
+Znovu jsem se pokusil o flashování BetaFlight. Našel jsem že ImpulseRC Driver fixer by mi měl pomoc aby Betaflight viděl FC v DFU režimu takže jsem ho stáhnul,
+po instalaci s Githubu protože ImpulsRC skončil jsme připojil FC v DFU režimu a počítač získal potřebné ovladače a FC se mi podařilo flashnout na BetaFlight.
+S Betaflight na FC jsem se připoji a prošel si BetaFLight nastavení.
+  
