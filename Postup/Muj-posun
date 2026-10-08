@@ -1,8 +1,8 @@
 1.10.-7.10.
 Stáhl jsem program Missionplaner pro Ardupilot, BetaFlight webovou aplikaci, a INAVConfigurator
-Po připojení desky do MissionPlanneru jsem si našel jak v něm za zálohovat soubor s parametry od výrobce.
+Po připojení FC do MissionPlanneru jsem si našel jak v něm za zálohovat soubor s parametry od výrobce.
 Poté jsem zkusil flashovat verzi Ardupilot která tam už byla takže mi to při flashování napsalo že už tam je to ta verze co chci nahrát.
-Rozhodl jsem se že zkusím flashovat BetaFlight ale stažená webová aplikace nevidí desku takže jsem u toho skončil.
+Rozhodl jsem se že zkusím flashovat BetaFlight ale stažená webová aplikace nevidí FC takže jsem u toho skončil.
 
 8.10.-14.10
 Založení GitHubu pro lepší přehled.
