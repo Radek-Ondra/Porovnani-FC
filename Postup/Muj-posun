@@ -8,5 +8,8 @@ Rozhodl jsem se že zkusím flashovat BetaFlight ale stažená webová aplikace 
 Založení GitHubu pro lepší přehled.
 Znovu jsem se pokusil o flashování BetaFlight. Našel jsem že ImpulseRC Driver fixer by mi měl pomoc aby Betaflight viděl FC v DFU režimu takže jsem ho stáhnul,
 po instalaci s Githubu protože ImpulsRC skončil jsme připojil FC v DFU režimu a počítač získal potřebné ovladače a FC se mi podařilo flashnout na BetaFlight.
-S Betaflight na FC jsem se připoji a prošel si BetaFLight nastavení.
+S Betaflight na FC jsem se připoji a prošel si BetaFLight nastavení. Při pokusu vrátit se zpět na ardu pilot jsem zjistil že Missionplanner neumí detekovat DFU takže jsem musel stáhnou STM32CubeProgramer
+a na stránkách ardu pilot najít target a stáhnout ho taktéž abych mohl ho přes ten STM32 nahrát protože STM32 umí DFU zkoušel jsem to i přes Betaflight flasher.
+Ten měl ale problém nejspíše s formátem with_bl.hex takže jsem od toho upustil a udělal to přes ten STM32 a po instalaci se mi podařilo na FC připojit přes Missionplaner a načíst soubor .param
+
   
