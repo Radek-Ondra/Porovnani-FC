@@ -1,16 +1,16 @@
-1.10.-7.10.
-Stáhl jsem program Missionplaner pro Ardupilot, BetaFlight webovou aplikaci, a INAVConfigurator
-Po připojení FC do MissionPlanneru jsem si našel jak v něm za zálohovat soubor s parametry od výrobce.
-Poté jsem zkusil flashovat verzi Ardupilot která tam už byla takže mi to při flashování napsalo že už tam je to ta verze co chci nahrát.
-Rozhodl jsem se že zkusím flashovat BetaFlight ale stažená webová aplikace nevidí FC takže jsem u toho skončil.
+1. 10. – 7. 10.
+Stáhl jsem program Mission Planner pro ArduPilot, webovou aplikaci Betaflight a INAV Configurator.
+Po připojení FC do Mission Planneru jsem si našel, jak v něm zálohovat soubor s parametry od výrobce.
+Poté jsem zkusil flashovat verzi ArduPilotu, která tam už byla, takže mi to při flashování napsalo, že už je nahrána verze, kterou chci použít.
+Rozhodl jsem se, že zkusím flashnout Betaflight, ale stažená webová aplikace neviděla FC, takže jsem u toho skončil.
 
-8.10.-14.10
+8. 10. – 14. 10.
 Založení GitHubu pro lepší přehled.
-Znovu jsem se pokusil o flashování BetaFlight. Našel jsem že ImpulseRC Driver fixer by mi měl pomoc aby Betaflight viděl FC v DFU režimu takže jsem ho stáhnul,
-po instalaci s Githubu protože ImpulsRC skončil jsme připojil FC v DFU režimu a počítač získal potřebné ovladače a FC se mi podařilo flashnout na BetaFlight.
-S Betaflight na FC jsem se připoji a prošel si BetaFLight nastavení. Při pokusu vrátit se zpět na ardu pilot jsem zjistil že Missionplanner neumí detekovat DFU takže jsem musel stáhnou STM32CubeProgramer
-a na stránkách ardu pilot najít target a stáhnout ho taktéž abych mohl ho přes ten STM32 nahrát protože STM32 umí DFU zkoušel jsem to i přes Betaflight flasher.
-Ten měl ale problém nejspíše s formátem with_bl.hex takže jsem od toho upustil a udělal to přes ten STM32 a po instalaci se mi podařilo na FC připojit přes Missionplaner a načíst soubor .param
-Zkoušel jsem flashnout INAV pomocí INAVConfigurátoru ale tam se mi to zaseklo na verifikaci takže jsem stáhl .hex verzi INAV a naflashoval pomocí STM32Cubeprogrammer a to šlo bez problému
-a následně jsem se připoji na FC v INAVConfigurátor a podíval jsem se do configurátoru.
-  
+Znovu jsem se pokusil o flashování Betaflightu. Zjistil jsem, že ImpulseRC Driver Fixer by mi měl pomoct, aby Betaflight viděl FC v DFU režimu, 
+tak jsem ho stáhnul. Po instalaci z GitHubu (protože ImpulseRC skončil) jsem připojil FC v DFU režimu. Počítač získal potřebné ovladače a FC se mi podařilo flashnout na Betaflight.
+S Betaflightem na FC jsem se připojil a prošel si jeho nastavení. Při pokusu vrátit se zpět na ArduPilot jsem zjistil, že Mission Planner neumí detekovat DFU. 
+Musel jsem tedy stáhnout STM32CubeProgrammer a na stránkách ArduPilotu najít a stáhnout odpovídající target. Přes STM32 jsem ho nahrál, protože STM32 DFU umí.
+Zkoušel jsem to i přes Betaflight Flasher, ten měl ale problém nejspíše s formátem with_bl.hex, takže jsem od toho upustil a udělal to přes STM32. 
+Po instalaci se mi podařilo k FC připojit přes Mission Planner a načíst soubor .param.
+Zkoušel jsem flashnout INAV pomocí INAV Configuratoru, ale tam se to zaseklo na verifikaci. Stáhl jsem tedy .hex verzi INAVu a naflashoval ji pomocí STM32CubeProgrammeru, 
+což proběhlo bez problémů. Následně jsem se k FC připojil v INAV Configuratoru a zkontroloval nastavení.
