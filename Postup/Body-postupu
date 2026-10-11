@@ -2,9 +2,9 @@
   1, ArduPilot stáhnut projít si ho uložit parametry od výrobce pokud to půjde a zkusit si ho flashovat.            - Hotové "podařilo se mi pomocí STM32CubeProgramer flashnout a připojit se v MissionPlanneru"
   2, BetaFLIGHT stáhnout webovou aplikaci projít si ji a zkusit si ho flashovat.                                    - Hotové "podařilo se mi flashnout a připojit se"
   3, INAV stáhnou projít si ho a zkusit si ho flashovat.                                                            - Hotové "podařilo se mi flashnout pomocí STM32CubeProgramer a připojit v INAVConfiguratoru"                   
-  4, PX4 stáhnout projít si ho a zkusit si ho flashovat.                                                              
+  4, PX4 stáhnout projít si ho a zkusit si ho flashovat.                                                            - Hotové "podařilo se mi flashnout pomocí STM32 .bin soubor QGC boatloaderem a poté v QGC flashnul PX4 soubor s verzí"     
 
 8.10.
-  1, Podívat se na videa o ArduPilot.
+  1, Podívat se na videa o ArduPilot.                                                                               -
   2, Podívat se na videa o PX4.
   3, Vybrat vysílač který pořídím.
