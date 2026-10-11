@@ -12,5 +12,8 @@ S Betaflightem na FC jsem se připojil a prošel si jeho nastavení. Při pokusu
 Musel jsem tedy stáhnout STM32CubeProgrammer a na stránkách ArduPilotu najít a stáhnout odpovídající target. Přes STM32 jsem ho nahrál, protože STM32 DFU umí.
 Zkoušel jsem to i přes Betaflight Flasher, ten měl ale problém nejspíše s formátem with_bl.hex, takže jsem od toho upustil a udělal to přes STM32. 
 Po instalaci se mi podařilo k FC připojit přes Mission Planner a načíst soubor .param.
-Zkoušel jsem flashnout INAV pomocí INAV Configuratoru, ale tam se to zaseklo na verifikaci. Stáhl jsem tedy .hex verzi INAVu a naflashoval ji pomocí STM32CubeProgrammeru, 
+Zkoušel jsem flashnout INAV pomocí INAV Configuratoru, ale tam se to zaseklo na verifikaci. Stáhl jsem tedy .hex verzi INAVu a naflashoval ji pomocí STM32, 
 což proběhlo bez problémů. Následně jsem se k FC připojil v INAV Configuratoru a zkontroloval nastavení.
+Flashování PX4 bylo asi nejtěžší protože na PX4 Githubu jsou jen .px4 soubory které STM32CubeProgramer neumí nahrát na desku a bez PX4 bootloaderu zase QGroundControl nevidí FC,
+takže jsem na stránkách MicoAir musel najít odkaz na github s .bin souborem, ve kterém byl bootloader a pomocí STM32 ho nahrát. Po nahrání jsem už FC viděl QGC a mohl do ní flashnout novější firmware
+.px4 který QGC umí flashovat. Na FC už se pak dalo normálně připojit ve QGC a configurovat parametry.
