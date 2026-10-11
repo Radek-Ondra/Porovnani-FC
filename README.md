@@ -1,2 +1,2 @@
 # Porovnani-FC
-- Slouží jak záznam postupu mou bakalářskou prací.
+- Slouží jako záznam postupu mou bakalářskou prací.
