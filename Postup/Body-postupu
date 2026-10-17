@@ -5,6 +5,12 @@
   4, PX4 stáhnout projít si ho a zkusit si ho flashovat.                                                            - Hotové "podařilo se mi flashnout pomocí STM32 .bin soubor QGC boatloaderem a poté v QGC flashnul PX4 soubor s verzí"     
 
 8.10.
-  1, Podívat se na videa o ArduPilot.                                                                               - Hotové "Ale budu si to muset ještě párkrát pustit abych pochopil úplně vše"
+  1, Podívat se na videa o ArduPilot.                                                                               - Hotové 
   2, Podívat se na videa o PX4.                                                                                     - Rozdělané
-  3, Vybrat vysílač který pořídím.                                                                                  - Rozdělané "Rozhodl jsem se pro GX15 taže porovnávám GX15 a GX15 MAX"
+  3, Vybrat vysílač který pořídím.                                                                                  - Rozdělané
+
+15.10.
+  1, Nastudovat ELRS                                                                                                - Hotové 
+  2, Nastudovat LORA                                                                                                - Hotové
+  3, Nastudovat MavLink                                                                                             - Rozděláné
+  4, Nastudovat MLRS                                                                                                - Rozdělané
