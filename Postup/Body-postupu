@@ -7,10 +7,10 @@
 8.10.
   1, Podívat se na videa o ArduPilot.                                                                               - Hotové 
   2, Podívat se na videa o PX4.                                                                                     - Hotové
-  3, Vybrat vysílač který pořídím.                                                                                  - Rozdělané
+  3, Vybrat vysílač který pořídím.                                                                                  - Hotové "Radiomaster AX 12"
 
 15.10.
-  1, Nastudovat ELRS                                                                                                - Hotové "přečetl jsem si jejich stránky a udělal poznámky"
-  2, Nastudovat LoRa                                                                                                - Hotové "Vyhledal jsem si že se jedná o vysílání dlouhého dosahu"
-  3, Nastudovat MavLink                                                                                             - Hotové
-  4, Nastudovat MLRS                                                                                                - Rozdělané
+  1, Nastudovat ELRS                                                                                                - Hotové "přečetl jsem si jejich stránky a zjistil, že se jedná o protokol ke komunikaci s FC hlavně nízká latence"
+  2, Nastudovat LoRa                                                                                                - Hotové "vyhledal jsem si že se jedná o vysílání dlouhého dosahu při nízkém výkonu několik mW"
+  3, Nastudovat MavLink                                                                                             - Hotové "zjistil jsem že slouží k přenosu dat z FC do pozemní stanice"
+  4, Nastudovat MLRS                                                                                                - Hotové "protokol za účelem vylepšit komunikaci mezi pozemní stanicí a FC"
