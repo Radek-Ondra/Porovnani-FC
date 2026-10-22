@@ -1,16 +1,19 @@
 1.10.
-  1, ArduPilot stáhnut projít si ho uložit parametry od výrobce pokud to půjde a zkusit si ho flashovat.            - Hotové "podařilo se mi pomocí STM32CubeProgramer flashnout a připojit se v MissionPlanneru"
-  2, BetaFLIGHT stáhnout webovou aplikaci projít si ji a zkusit si ho flashovat.                                    - Hotové "podařilo se mi flashnout a připojit se"
-  3, INAV stáhnou projít si ho a zkusit si ho flashovat.                                                            - Hotové "podařilo se mi flashnout pomocí STM32CubeProgramer a připojit v INAVConfiguratoru"                   
-  4, PX4 stáhnout projít si ho a zkusit si ho flashovat.                                                            - Hotové "podařilo se mi flashnout pomocí STM32 .bin soubor QGC boatloaderem a poté v QGC flashnul PX4 soubor s verzí"     
+  1. ArduPilot stáhnut projít si ho uložit parametry od výrobce pokud to půjde a zkusit si ho flashovat.            - Hotové "podařilo se mi pomocí STM32CubeProgramer flashnout a připojit se v MissionPlanneru"
+  2. BetaFLIGHT stáhnout webovou aplikaci projít si ji a zkusit si ho flashovat.                                    - Hotové "podařilo se mi flashnout a připojit se"
+  3. INAV stáhnou projít si ho a zkusit si ho flashovat.                                                            - Hotové "podařilo se mi flashnout pomocí STM32CubeProgramer a připojit v INAVConfiguratoru"                   
+  4. PX4 stáhnout projít si ho a zkusit si ho flashovat.                                                            - Hotové "podařilo se mi flashnout pomocí STM32 .bin soubor QGC boatloaderem a poté v QGC flashnul PX4 soubor s verzí"     
 
 8.10.
-  1, Podívat se na videa o ArduPilot.                                                                               - Hotové 
-  2, Podívat se na videa o PX4.                                                                                     - Hotové
-  3, Vybrat vysílač který pořídím.                                                                                  - Hotové "Radiomaster AX 12"
+  1. Podívat se na videa o ArduPilot.                                                                               - Hotové 
+  2. Podívat se na videa o PX4.                                                                                     - Hotové
+  3. Vybrat vysílač který pořídím.                                                                                  - Hotové "Radiomaster AX 12"
 
 15.10.
-  1, Nastudovat ELRS                                                                                                - Hotové "přečetl jsem si jejich stránky a zjistil, že se jedná o protokol ke komunikaci s FC hlavně nízká latence"
-  2, Nastudovat LoRa                                                                                                - Hotové "vyhledal jsem si že se jedná o vysílání dlouhého dosahu při nízkém výkonu několik mW"
-  3, Nastudovat MavLink                                                                                             - Hotové "zjistil jsem že slouží k přenosu dat z FC do pozemní stanice"
-  4, Nastudovat MLRS                                                                                                - Hotové "protokol za účelem vylepšit komunikaci mezi pozemní stanicí a FC"
+  1. Nastudovat ELRS                                                                                                - Hotové 
+  2. Nastudovat LoRa                                                                                                - Hotové 
+  3. Nastudovat MavLink                                                                                             - Hotové 
+  4. Nastudovat MLRS                                                                                                - Hotové 
+
+22.10.
+
