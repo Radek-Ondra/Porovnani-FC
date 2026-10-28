@@ -22,5 +22,7 @@ takže jsem na stránkách MicoAir musel najít odkaz na github s .bin souborem,
 Studování protokolů vysílače ELRS, LoRa, MLRS, Mavlink
 
 22. 10. - x. 11.
-Updatnul jsem firmware na Radiomaster AX12 na nejnovější verzi. Podařilo se mi propojit TX a RX přes ELRS  v rozhraní PX4 v Qground control vidím pohyb joysticků.
+Updatnul jsem firmware na Radiomaster AX12 na nejnovější verzi. Podařilo se mi propojit TX a RX přes ELRS  v rozhraní PX4 v Qground control vidím pohyb joysticků. Updatnul jsem ELRS v TX a RX na 4.1.0 a spoji a fungovali v QGround. 
+Flashnul jsem Betafligh na FC a zkontroloval jestli confiurátor beta flight registruje pohyb joysticků a fungovalo to. 
+
 
