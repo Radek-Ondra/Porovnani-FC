@@ -24,6 +24,6 @@ Studování protokolů vysílače ELRS, LoRa, MLRS, Mavlink
 22. 10. - x. 11.
 Updatnul jsem firmware na Radiomaster AX12 na nejnovější verzi. Podařilo se mi propojit TX a RX přes ELRS  v rozhraní PX4 v Qground control vidím pohyb joysticků. Updatnul jsem ELRS v TX a RX na 4.1.0 a spoji a fungovali v QGround. 
 Flashnul jsem Betafligh na FC a zkontroloval jestli confiurátor beta flight registruje pohyb joysticků a fungovalo to. Flashnul jsem na FC Ardu pilot a také to funguje bez problému ale odezva missionplanneru na TX je vizuélně o dost horší oproti beta a px4.
-Podařilo se mi spojit TX a RX i na Inav jen je potřeba v nastavení změnit komunikaci s SBUS na CRSF.
+Podařilo se mi spojit TX a RX i na Inav jen je potřeba v nastavení změnit komunikaci s SBUS na CRSF. Podařilo se mi naflashovat mLRS a otestovat ho že funguje.
 
 
