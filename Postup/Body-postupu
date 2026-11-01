@@ -18,6 +18,7 @@
 22.10.
   1. Aktualizovat vysílač a přijímač                                                                                - Hotové
   2. Propojit vysílač s přijímačem                                                                                  - Hotové
-  3. Naflashovat mLRS a spojit RX a TX                                                                              - Hotové
+  3. Naflashovat mLRS a spojit RX a TX                                                                              - Rozdělané "Při pokusu otestovat PX4 a mavlink ale nastal problém protože PX4 čte RC přes ovladač CRSF který čeká CRSF snímky ale můj příjímač posílá RC kanály jen jako MAVLinkk zprávy přes sériový port.
+                                                                                                                                 V nastavení přijímače chybí Rx Out Mode, takže RC jíným způsobem zapnout nejde."
   4. Návrh strukturovaného obsahu práce                                                                             - Rozdělané
   
