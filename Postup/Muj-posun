@@ -25,6 +25,7 @@ Studování protokolů vysílače ELRS, LoRa, MLRS, Mavlink
 Updatnul jsem firmware na Radiomaster AX12 na nejnovější verzi. Podařilo se mi propojit TX a RX přes ELRS  v rozhraní PX4 v Qground control vidím pohyb joysticků. Updatnul jsem ELRS v TX a RX na 4.1.0 a spoji a fungovali v QGround. 
 Flashnul jsem Betafligh na FC a zkontroloval jestli confiurátor beta flight registruje pohyb joysticků a fungovalo to. Flashnul jsem na FC Ardu pilot a také to funguje bez problému ale odezva missionplanneru na TX je vizuélně o dost horší oproti beta a px4.
 Podařilo se mi spojit TX a RX i na Inav jen je potřeba v nastavení změnit komunikaci s SBUS na CRSF. Podařilo se mi naflashovat mLRS a otestovat ho že funguje. Při pokusu otestovat PX4 a mavlink ale nastal problém protože PX4 čte RC přes ovladač CRSF který čeká CRSF snímky ale můj příjímač posílá RC kanály jen jako MAVLinkk zprávy přes sériový port.
-V nastavení přijímače chybí Rx Out Mode, takže RC jíným způsobem zapnout nejde.
+V nastavení přijímače chybí Rx Out Mode, takže RC jíným způsobem zapnout nejde. Podařilo se mi ještě rozjed mLRS na INAV a poté jsem šel flashnout zpátky na ELRS což jsem mi povedlo jen se mi v ovladači nastavilo DK500 a stím můj RX nefungoval.
+Po změně na 250Hz se mi už podařilo propojit RX a TX a ověřit to v Betaflight a INAV.
 
 
