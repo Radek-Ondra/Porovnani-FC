@@ -28,4 +28,4 @@ Podařilo se mi spojit TX a RX i na Inav jen je potřeba v nastavení změnit ko
 V nastavení přijímače chybí Rx Out Mode, takže RC jíným způsobem zapnout nejde. Podařilo se mi ještě rozjed mLRS na INAV a poté jsem šel flashnout zpátky na ELRS což jsem mi povedlo jen se mi v ovladači nastavilo DK500 a stím můj RX nefungoval.
 Po změně na 250Hz se mi už podařilo propojit RX a TX a ověřit to v Betaflight a INAV.
 
-
+12.11.
