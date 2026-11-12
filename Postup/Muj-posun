@@ -29,7 +29,7 @@ V nastavení přijímače chybí Rx Out Mode, takže RC jíným způsobem zapnou
 Po změně na 250Hz se mi už podařilo propojit RX a TX a ověřit to v Betaflight a INAV.
 
 12.11.
-Podle instrukcí z emailu jsem změnil MAVLink System ID v QGroundControl z 255 na 254 a v Mission Planneru ponechal 255. Poté začaly obě aplikace současně přijímat telemetrii, což jsem ověřil pohybem letového kontroléru.
+Podle instrukcí z emailu jsem změnil MAVLink System ID v QGroundControl na AX12 z 255 na 254 a v Mission Planneru ponechal 255. Poté začaly obě aplikace současně přijímat telemetrii, což jsem ověřil pohybem letového kontroléru.
 Následně jsem otestoval čtení a zápis parametrů FC z obou aplikací. V Mission Planneru jsem změnil parametr LOG_DISARMED z 0 na 1, změnu uložil a ověřil v QGroundControl. Poté jsem parametr v QGroundControl vrátil na 0 a jeho 
 hodnotu zkontroloval v Mission Planneru. Vše fungovalo správně.
 Nakonec jsem otestoval restart FC z obou aplikací. Při restartu z QGroundControl se QGC odpojilo, ale Mission Planner po naběhnutí FC automaticky obnovil telemetrii. Při restartu z Mission Planneru zůstal MP připojený a QGroundControl pouze krátce ztratilo 
