@@ -34,3 +34,8 @@ Následně jsem otestoval čtení a zápis parametrů FC z obou aplikací. V Mis
 hodnotu zkontroloval v Mission Planneru. Vše fungovalo správně.
 Nakonec jsem otestoval restart FC z obou aplikací. Při restartu z QGroundControl se QGC odpojilo, ale Mission Planner po naběhnutí FC automaticky obnovil telemetrii. Při restartu z Mission Planneru zůstal MP připojený a QGroundControl pouze krátce ztratilo 
 telemetrii, která se následně obnovila.
+
+13.11.
+Nainstaloval jsem DroidPlanner Tower 4.0.0.8 na RadioMaster AX12 a otestoval jeho komunikaci s ArduPilotem. Připojení přes interní sériové rozhraní nefungovalo, protože aplikace nedokázala rozpoznat zařízení. Přes mLRS Wi-Fi pomocí UDP se podařilo přijímat telemetrii a číst i měnit parametry FC.
+Následně jsem testoval současný provoz DroidPlanneru, QGroundControl a Mission Planneru. Při spuštění QGroundControl docházelo ke konfliktu na UDP portu 14550. Po vypnutí automatického připojování v QGroundControl a použití UDPCl v Mission Planneru se podařilo problém vyřešit. 
+Při spuštění aplikací v pořadí DroidPlanner, QGroundControl a Mission Planner se nakonec podařilo zprovoznit telemetrii ve všech třech aplikacích současně. Přímá komunikace DroidPlanneru s interním Tx však stále nefunguje.
