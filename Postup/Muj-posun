@@ -39,3 +39,13 @@ telemetrii, která se následně obnovila.
 Nainstaloval jsem DroidPlanner Tower 4.0.0.8 na RadioMaster AX12 a otestoval jeho komunikaci s ArduPilotem. Připojení přes interní sériové rozhraní nefungovalo, protože aplikace nedokázala rozpoznat zařízení. Přes mLRS Wi-Fi pomocí UDP se podařilo přijímat telemetrii a číst i měnit parametry FC.
 Následně jsem testoval současný provoz DroidPlanneru, QGroundControl a Mission Planneru. Při spuštění QGroundControl docházelo ke konfliktu na UDP portu 14550. Po vypnutí automatického připojování v QGroundControl a použití UDPCl v Mission Planneru se podařilo problém vyřešit. 
 Při spuštění aplikací v pořadí DroidPlanner, QGroundControl a Mission Planner se nakonec podařilo zprovoznit telemetrii ve všech třech aplikacích současně. Přímá komunikace DroidPlanneru s interním Tx však stále nefunguje.
+
+14.11.
+Rozhodl jsem se ověřit, zda ArduPilot změnil přenosovou rychlost GPS MicoAir M10 na 230400 baud a zda bude GPS fungovat i s ostatními firmwary. Nejprve jsem zálohoval konfiguraci ArduPilotu a nahrál novější Betaflight 2026.6.2, ve kterém GPS fungovala správně a získala 3D Fix.
+Pomocí příkazu status v CLI jsem také ověřil funkční komunikaci na 230400 baud. Následně jsem pomocí příkazu gpspassthrough a programu u-center 2 zkontroloval konfiguraci GPS, kde byla v paměti Flash uložená přenosová rychlost 230400 baud.
+Poté jsem záměrně nahrál starší Betaflight 4.5.5, který nepodporuje rychlost 230400 baud, abych ověřil, zda se změna přenosové rychlosti GPS skutečně projevila i při použití staršího firmwaru.
+V této verzi se GPS nepodařilo detekovat při 57600 ani 115200 baud, což odpovídalo předpokladu, že GPS zůstala nastavená na vyšší rychlost.
+Následně jsem otestoval INAV, který GPS správně detekoval a komunikoval s ní na 230400 baud. V PX4 se GPS při automatickém nastavení připojila na 115200 baud. 
+Po ruční změně rychlosti na 230400 baud a restartu FC komunikace také fungovala správně, což jsem ověřil příkazem gps status v MAVLink Console.
+
+15.11.
