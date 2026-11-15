@@ -49,3 +49,4 @@ Následně jsem otestoval INAV, který GPS správně detekoval a komunikoval s n
 Po ruční změně rychlosti na 230400 baud a restartu FC komunikace také fungovala správně, což jsem ověřil příkazem gps status v MAVLink Console.
 
 15.11.
+Pokusil jsem se zprovoznit PX4 s mLRS na letovém kontroléru MicoAir H743 V2. Upravil jsem nastavení komunikace a parametry PX4. Nakonec se podařilo zprovoznit komunikaci s QGroundControl jak na vysílači RadioMaster AX12, tak na počítači přes COM port.
