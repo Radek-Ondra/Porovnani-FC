@@ -56,3 +56,15 @@ Vyzkoušel jsem aplikaci ArduDeck na RadioMaster AX12. Připojení přes USB-OTG
 ArduDeck sice obsahuje zmínku o podpoře AX12 a interního sériového portu ttyS1, ale v aplikaci není možnost na tento port přepnout. Dále jsem vyzkoušel propojení obou horních USB-C portů AX12 (DSC a USB HOST). 
 Android zařízení detekoval, ale přenos MAVLink telemetrie se nepodařilo potvrdit. DSC port se při připojení k notebooku nedetekoval. Z testování vyplývá, že ArduDeck funguje přes USB-OTG a UDP, zatímco připojení přes interní sériový port zatím není možné využít.
 
+19.11.
+Ve zdrojovém kódu mLRS jsem dohledal hardwarové zapojení sériových rozhraní AX12. serial využívá UARTB, který vede do řídicího MCU vysílače, zatímco serial2 využívá UARTD propojený s ESP32-C3 Backpackem. Zjistil jsem také, že Ser Port a Ser Port2 představují dvě konfigurovatelné datové cesty. 
+Některé možnosti, například serial a wbridge, lze mezi nimi prohodit. Nejsou však úplně zaměnitelné, protože crsfbridge je dostupný pouze na prvním portu a stejné fyzické rozhraní nelze současně použít pro obě datové cesty.
+
+Následně jsem testoval DSC port AX12, abych zjistil, zda přes něj lze dostat telemetrii do aplikace Telemetry Viewer. Po připojení k notebooku přes USB-A → USB-C jej Windows rozpoznal jako USB Serial Device (COM3), s identifikací VID 2E3C a PID 5750. 
+Pomocí PowerShellu jsem ověřil přenos dat a během 10 sekund zachytil 12 293 bajtů. Data obsahovala rámce začínající A6, které pravděpodobně odpovídají internímu protokolu UMBUS. Během tohoto měření byl FC odpojený, takže přenos MAVLink telemetrie nebylo možné potvrdit.
+
+Při testování DSC se objevila chyba komunikace mLRS Lua s hláškou Please check if CRSF baudrate is 400k. Chyba přetrvávala i po odpojení DSC a komunikace se obnovila až po úplném vypnutí a zapnutí AX12. Přesná příčina nebyla zjištěna.
+
+Následně jsem obnovil původní konfiguraci Ser Port = serial a Ser Port2 = wbridge a znovu ověřil přenos telemetrie přes Wi-Fi Backpack. Podařilo se současně připojit QGroundControl na AX12 a Mission Planner na notebooku. 
+Obě aplikace přijímají telemetrii, reagují na pohyb letového kontroléru a následně se načetly také údaje GPS.
+
