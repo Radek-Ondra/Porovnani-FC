@@ -50,3 +50,9 @@ Po ruční změně rychlosti na 230400 baud a restartu FC komunikace také fungo
 
 15.11.
 Pokusil jsem se zprovoznit PX4 s mLRS na letovém kontroléru MicoAir H743 V2. Upravil jsem nastavení komunikace a parametry PX4. Nakonec se podařilo zprovoznit komunikaci s QGroundControl jak na vysílači RadioMaster AX12, tak na počítači přes COM port.
+
+18-19.11.
+Vyzkoušel jsem aplikaci ArduDeck na RadioMaster AX12. Připojení přes USB-OTG přímo k FC MicoAir H743 V2 fungovalo, stejně jako bezdrátové připojení přes mLRS Wi-Fi Backpack pomocí UDP. 
+ArduDeck sice obsahuje zmínku o podpoře AX12 a interního sériového portu ttyS1, ale v aplikaci není možnost na tento port přepnout. Dále jsem vyzkoušel propojení obou horních USB-C portů AX12 (DSC a USB HOST). 
+Android zařízení detekoval, ale přenos MAVLink telemetrie se nepodařilo potvrdit. DSC port se při připojení k notebooku nedetekoval. Z testování vyplývá, že ArduDeck funguje přes USB-OTG a UDP, zatímco připojení přes interní sériový port zatím není možné využít.
+
